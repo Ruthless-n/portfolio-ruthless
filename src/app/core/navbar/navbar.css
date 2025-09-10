@@ -1,26 +1,29 @@
 .navbar {
+  overflow: hidden;
+  background-color: #007bff;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  background: #222;
-  padding: 1rem;
-}
-
-.navbar button {
-  background: transparent;
-  border: 1px solid #fff;
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.navbar button:hover {
-  background: #444;
+  align-items: center;
+  height: 70px;
 }
 
 .active {
-  background: #007bff;
-  border-color: #007bff;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent; 
+}
+
+
+.navbar a {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 120px;
+  border-radius: 150px;
 }
