@@ -1,10 +1,15 @@
 .navbar {
+  position: fixed;       /* fixa no topo da página */
+  top: 0;                /* encosta no topo */
+  left: 0;               /* encosta na esquerda */
+  right: 0;              /* encosta na direita */
+  width: 100%; 
   overflow: hidden;
-  background-color: #007bff;
+  background: linear-gradient(to right, #0077FB, #FF00FF);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 
 .active {
@@ -15,7 +20,7 @@
 
 
 .navbar a {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
@@ -26,4 +31,17 @@
   height: 40px;
   width: 120px;
   border-radius: 150px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar a {
+    width: 70%;
+    margin: 5px 0;
+  }
 }
